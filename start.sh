@@ -2,7 +2,7 @@
 
 if [ ! -f model.gguf ]; then
   echo "Downloading AI model (TinyLlama Q2)..."
-  wget https://drive.google.com/file/d/1qi4dQG77fqZUz_SXNnX7GQ2JX80vEJ0D/view?usp=sharing
+  wget https://huggingface.co/tensorblock/tiny-random-llama-GGUF/resolve/main/tiny-random-llama-Q8_0.gguf
 fi
 
 uvicorn main:app --host 0.0.0.0 --port 10000
